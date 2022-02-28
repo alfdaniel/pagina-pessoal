@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  //box-sizing: border-box;
+}
+
+section {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 180px;
+  justify-content: center;
+}
+
+.div-principal {
+  h1 {
+    margin-top: 80px;
+  }
+}
+
+.text {
+  margin-top: 20px;
+  font-size: max(1.2em, 1.3vw);
+  line-height: 1.5;
+  color: #2b3035;
+}
+
+div {
+  display: block;
+  justify-content: center;
+}
+
+iframe{
+  width: 750px;
+  height: 400px;
+}

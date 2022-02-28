@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-toogle{
+    position: relative;
+    padding: 20px;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+header{
+    transition: 0.6s;
+    padding: 20px;
+    z-index: 100000;
+    background: #303030;
+}
+
+.logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+
+.main-nav{
+    list-style-type: none;
+    display: none;
+
+    li {
+        text-align: center;
+        margin: 15px auto;
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+.active{
+    display: block;
+    color: #fff;
+
+}
+
+// Media query para desktop com o mínimo de 769px
+
+@media screen and (min-width: 769px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        padding: 40px 100px;
+        z-index: 100000;
+    }
+
+    .logo {
+        position: relative;
+        animation: mymove 1s;
+    }
+
+    header .logo {
+        position: relative;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 1s;
+    }
+
+    header ul {
+        position: relative;
+        list-style: none;
+        transition: 0.6s;
+        display: flex;
+    }
+
+    header ul li {
+        position: relative;
+        list-style: none;
+        transition: 0.6s;
+    }
+
+    header ul li a {
+        position: relative;
+        margin: 0 15px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1em;
+        letter-spacing: 2px;
+        font-weight: 500px;
+        transition: 0.6s;
+        position: relative;
+        animation: mymove 1s;
+    }
+
+    .nav-links{
+        margin-left: 40px;
+    }
+
+    .active{
+        display: block;
+    }
+
+    @keyframes mymove {
+        from {
+            top: 1000px;
+        }
+        to {
+            top: 0px;
+        }
+    }
+
+    .sticky {
+        padding: 5px 100px;
+        background: #fff;
+
+        a {
+            color: black;
+        }
+    }
+
+    .sticky ul li a {
+        color: black;
+        font-weight: bold;
+    }
+}

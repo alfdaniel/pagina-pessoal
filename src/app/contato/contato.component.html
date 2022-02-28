@@ -1,0 +1,42 @@
+<section>
+    <div>
+        <div class="contact">
+            <h1>Atenção!</h1>
+            <h2>Esse formulário ainda está em fase de desenvolvimento<br>
+                Para contato usar os canais no rodapé da página 
+            </h2>
+        </div>
+
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput placeholder="email@email.com">
+                <mat-icon matSuffix>mode_edit</mat-icon>
+            </mat-form-field>
+        </form>
+
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+                <mat-label>Fone</mat-label>
+                <!-- <span matPrefix>+55 &nbsp;</span> -->
+                <input type="tel" matInput placeholder="(00)00000-0000">
+                <mat-icon matSuffix>mode_edit</mat-icon>
+            </mat-form-field>
+        </form>
+
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+                <mat-label>Message</mat-label>
+                <input matInput #message maxlength="256" placeholder="Ex. I need help with...">
+                <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+                <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+            </mat-form-field>
+        </form>
+        
+        <div class="example-button-row">
+            <button mat-stroked-button color="accent">Limpar</button>
+            <button mat-stroked-button color="primary">Enviar</button>
+        </div>
+        
+    </div>
+</section>
