@@ -34,3 +34,12 @@ iframe{
   width: 750px;
   height: 400px;
 }
+
+@media screen and (max-width: 769px) {
+  
+  iframe{
+    width: 300px;
+    height: 200px;
+  }
+
+  }
