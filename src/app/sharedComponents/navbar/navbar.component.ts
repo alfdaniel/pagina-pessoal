@@ -11,11 +11,6 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     this.putEventsMenu();
-
-    window.addEventListener("scroll", function () {
-      var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 0);
-    })
   }
 
   putEventsMenu() {
@@ -23,7 +18,7 @@ export class NavbarComponent implements OnInit {
     const menuMobile = document.getElementById('menu-mobile');
     menuMobile.addEventListener('click', function () {
       menuDesktop.classList.toggle('active');
-    })
+    });
   }
 
 }

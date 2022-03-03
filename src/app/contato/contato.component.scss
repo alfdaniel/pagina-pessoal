@@ -14,10 +14,19 @@ section {
 .example-form {
     min-width: 150px;
     max-width: 900px;
-    width: 900px;
+    width: 700px;
   }
   
   .example-full-width {
     width: 100%;
   }
 
+@media screen and (max-width: 769px){
+  
+  .example-form {
+    width: 300px;
+    display: block;
+justify-content: center;
+  }
+
+}
